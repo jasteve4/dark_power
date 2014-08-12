@@ -57,38 +57,13 @@
 <library>
 <packages>
 <package name="PTN78020-TH">
-<pad name="2" x="-17.4625" y="-9.525" drill="1.2"/>
-<pad name="3" x="-4.7625" y="-9.525" drill="1.2"/>
-<pad name="4" x="-1.5875" y="-9.525" drill="1.2"/>
-<pad name="5" x="1.5875" y="-9.525" drill="1.2"/>
-<pad name="6" x="17.4625" y="-9.525" drill="1.2"/>
-<pad name="7" x="17.4625" y="9.525" drill="1.2"/>
-<pad name="1" x="-17.4625" y="9.525" drill="1.2"/>
-<wire x1="-19.05" y1="-11.1125" x2="19.05" y2="-11.1125" width="0.127" layer="51"/>
-<wire x1="19.05" y1="-11.1125" x2="19.05" y2="11.1125" width="0.127" layer="51"/>
-<wire x1="19.05" y1="11.1125" x2="-19.05" y2="11.1125" width="0.127" layer="51"/>
-<wire x1="-19.05" y1="11.1125" x2="-19.05" y2="-11.1125" width="0.127" layer="51"/>
-<wire x1="-19.05" y1="11.1125" x2="-19.05" y2="-11.1125" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="-11.1125" x2="19.05" y2="-11.1125" width="0.127" layer="21"/>
-<wire x1="19.05" y1="-11.1125" x2="19.05" y2="11.1125" width="0.127" layer="21"/>
-<wire x1="19.05" y1="11.1125" x2="-19.05" y2="11.1125" width="0.127" layer="21"/>
-<text x="-17.4625" y="-12.7" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="9.525" y="-12.7" size="1.27" layer="27" font="vector">PTN78020</text>
-</package>
-<package name="PTN78020-SND">
-<smd name="2" x="-17.4625" y="-9.525" dx="2.286" dy="2.286" layer="1" roundness="100"/>
-<smd name="3" x="-4.7625" y="-9.525" dx="2.286" dy="2.286" layer="1" roundness="100"/>
-<smd name="4" x="-1.5875" y="-9.525" dx="2.286" dy="2.286" layer="1" roundness="100"/>
-<smd name="5" x="1.5875" y="-9.525" dx="2.286" dy="2.286" layer="1" roundness="100"/>
-<smd name="6" x="17.4625" y="-9.525" dx="2.286" dy="2.286" layer="1" roundness="100"/>
-<smd name="1" x="-17.4625" y="9.525" dx="2.286" dy="2.286" layer="1" roundness="100"/>
-<smd name="7" x="17.4625" y="9.525" dx="2.286" dy="2.286" layer="1" roundness="100"/>
-<wire x1="-20.6375" y1="12.7" x2="-20.6375" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="-20.6375" y1="-12.7" x2="20.6375" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="20.6375" y1="-12.7" x2="20.6375" y2="12.7" width="0.127" layer="21"/>
-<wire x1="20.6375" y1="12.7" x2="-20.6375" y2="12.7" width="0.127" layer="21"/>
-<text x="-20.6375" y="-14.2875" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="11.1125" y="-14.2875" size="1.27" layer="27" font="vector">PTN78020</text>
+<pad name="P$1" x="0" y="0" drill="1.1"/>
+<pad name="P$2" x="12.7" y="0" drill="1.1"/>
+<pad name="P$3" x="15.875" y="0" drill="1.1"/>
+<pad name="P$4" x="19.05" y="0" drill="1.1"/>
+<pad name="P$5" x="34.925" y="0" drill="1.1"/>
+<pad name="P$6" x="0" y="19.05" drill="1.1"/>
+<pad name="P$7" x="34.925" y="19.05" drill="1.1"/>
 </package>
 </packages>
 <symbols>
@@ -105,52 +80,10 @@
 <pin name="GND2" x="15.24" y="5.08" length="middle" rot="R180"/>
 <pin name="VOUT" x="15.24" y="2.54" length="middle" rot="R180"/>
 <text x="-12.7" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.08" y="-7.62" size="1.778" layer="96">PTN78020</text>
+<text x="5.08" y="-7.62" size="1.778" layer="96">PTN7820</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PTN78020-TH">
-<gates>
-<gate name="G$1" symbol="PTN78020" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PTN78020-TH">
-<connects>
-<connect gate="G$1" pin="ADJ" pad="4"/>
-<connect gate="G$1" pin="GND1" pad="1"/>
-<connect gate="G$1" pin="GND2" pad="7"/>
-<connect gate="G$1" pin="INH" pad="3"/>
-<connect gate="G$1" pin="SEN" pad="5"/>
-<connect gate="G$1" pin="VIN" pad="2"/>
-<connect gate="G$1" pin="VOUT" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PTH78020-SMD">
-<gates>
-<gate name="G$1" symbol="PTN78020" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PTN78020-SND">
-<connects>
-<connect gate="G$1" pin="ADJ" pad="4"/>
-<connect gate="G$1" pin="GND1" pad="1"/>
-<connect gate="G$1" pin="GND2" pad="7"/>
-<connect gate="G$1" pin="INH" pad="3"/>
-<connect gate="G$1" pin="SEN" pad="5"/>
-<connect gate="G$1" pin="VIN" pad="2"/>
-<connect gate="G$1" pin="VOUT" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
